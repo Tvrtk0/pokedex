@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - SofaScore Academy</title>
+    <meta name="author" content="Tvrtko Babić">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/pokeball.png" alt="pokeball" width="25px">
+            <h1>Pokedex</h1>
+        </nav>
+        
+        <button id="hidden-pokemon" data-modal-target="#modal">Hidden pokemon</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-header">
+                <div class="title">
+                    <h2>Hidden pokemon</h2>
+                </div>
+                <button data-close-button class="close-button">
+                    <img src="img/x.svg" alt="close">
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <span id="empty-msg"></span>
+                <ul class="modal-list"></ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="pokemon-section"></section>
+
+        <footer id="loading">
+            <button id="load">Show more</button>
+        </footer>
+    </main>
+    
+    <div id="overlay"></div>
+    <script src="script.js" defer></script>
+</body>
+</html>
